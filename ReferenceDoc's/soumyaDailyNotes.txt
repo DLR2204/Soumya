@@ -1,0 +1,728 @@
+ON-1,OFF-0--------------------->Ascii,Unicode....
+
+a-97--10100101010
+
+programming lang ---- programs(set of instructions)
+
+
+s.l:-designing website
+
+
+p.l:-developing software
+
+								computer lang
+								
+						scripting lang		programming lang
+									
+										pop				oop
+						
+									basic,cobal....		java,.net,python,c++,......
+
+
+security:-Abstraction,Encapsulation
+
+
+performance :-Inheritance,Polymorphism
+
+
+java:-
+
+
+paltform independency:-
+
+
+Garbage collector:-
+
+
+				history:-
+				
+				greentalk(.gt)------------>oak------------->java(.java)
+				
+				sunmicro sys-------------------------------->oracle
+				
+				jdk 1.0-------------------------------------->jdk 22
+				
+				
+	cmd>	java --version
+	
+			
+			3 editions
+			
+			
+			jse/j2se :- (no client-server)=standalone app's  --core java
+			
+			jee/j2ee :-(client -server) = distributed app's ---core java;Adv java
+			
+			jme/j2me :-mobile app's ----micro details of core java
+				
+				
+				
+26
+
+53-keywords		3-reserved liters  2-unused keywords		48
+
+
+shortcuts:-
+==========
+	
+	suggestions  ---> ctrl+space
+	
+	comments     ---->ctrl +/
+	
+	format   --------->ctrl+shift+for
+	
+	import     -------->ctrl+shift+o
+
+
+
+		
+		
+		datatypes:-
+		=========
+		
+					(1)primitive (pre defined)
+					
+					(2)non-primitive (user defined)
+					
+					
+		variables:-
+				
+				
+		datatype varname;	//declaration
+		
+		
+		datatype varname = value ;  //initialization
+		
+		
+		local variables					global variables
+				
+									static 			instance
+									
+									
+	syntax:-
+	=======
+	
+static :-  static datatype varname = value ;
+	
+instance :- datatype varname = value ;	
+	
+	access:-
+	=======
+	
+static :- static prop's can be accessed by the class reference
+
+instance :-instance prop's can be accessed by the object reference	
+
+				syntax:
+				
+				classname objectname = new classname();
+
+	
+	memory space:-
+	============
+static :- it will gets the memory space only once when the class loads into the jvm
+
+instance :it will gets the memory space for every object creation	
+	
+	in memory:-
+	============
+	
+static :- method area 
+
+instance :- heap area
+	
+	usage:-
+	=======
+	
+static :- common data		
+
+instance :- unique data
+
+
+	operators:-
+	
+			a + b
+			
+
+ULTRA AB
+
+Uniary   ++;--,-		a++ ===>a=a+1
+
+Logical		&,|
+
+Terinary	(true)? a:b 
+
+Relational 	>,<,<=
+
+Assignment =,=+			a=+6 ---->a=a+6
+
+Arithematic  +,-,/ ,*,%
+
+Bitwise   &,|
+
+
+		methods:-set of statements altogether will performs the same task.
+		
+		
+		syntax/signature:-
+			
+			accessmodifier  returntype metname(params...){
+			
+			//(body)method implmentation------->return 
+			
+			}
+			
+	2 types :-signature
+	
+	
+	(1)static
+	
+	
+			accessmodifier  static returntype metname(params...){
+			
+			//(body)method implmentation------->return 
+			
+			}
+	
+	(2)dynamic
+	
+			accessmodifier  returntype metname(params...){
+			
+			//(body)method implmentation------->return 
+			
+			}
+			
+			
+			
+			
+			class:-  var + methods  + constructor
+			
+			
+			jdk library :-jar---->	packages---->classess
+			
+			
+			
+oops :-
+
+	Inheritance:-Accquring parent class prop's to a child class
+	
+				*CODE REUSABILITY
+			
+				
+				extends 				implements
+				
+			class-->class				class---->interface
+			interface-->interface
+			
+	class A{	------>parent/super
+	
+	100 methods
+	
+	add(int a,int b){
+	a+b;
+	}
+	
+	}
+	
+	class B {	---->sub/child/base
+	
+	100 methods
+	
+	add(int a,int b){
+	a*b;
+	}
+	
+	}
+	
+	
+	class c extends A,B{
+	
+	obj.add
+	
+	}
+	
+	*the default package for ever java file is "java.lang"
+	*the default parent class for every java class is "java.lang.Object class".
+	
+	
+	*In java MI is supported @class level
+	
+	*In java MI is supported @interface level
+	
+	
+	methods:- 2 types(body/met implmentation)------->
+	
+	
+	(1)concrete methods  :- will have method implmentation/body
+	
+		accessmodifier  returntype metname(params...){
+			
+			//(body)method implmentation------->return 
+			
+			}
+	
+	
+	(2)abstract methods :- will not have method implmentation/body
+		
+		accessmodifier abstract returntype metname(params...);
+		
+	
+	class  :- it's the collection of only concreate methods
+	
+	abstract class :- it's the combination of both concreate nd abstract methods
+
+	interface :- it's the collection of only abstract methods
+	
+	
+	Abstraction:- Hiding the our personal data.
+	
+			***Security
+			
+	interface -100%			abstract class-(0-100%)			class-0%
+	
+	
+	Polymorphism:-same method name but uses in different ways.
+	
+				* Code reusability
+	
+	(1)	MethodOverloading :-same method name but difference is in it's parameters
+	
+							(a)type of params..
+							(b)no:-of params...
+							(c)order of params..
+							
+	
+	(2)MethodOverriding:-method name is same but difference is in it's implmentation/body
+	
+	
+	class Parent{
+	100Cr()
+	
+	marriage(){
+	kajol;
+	
+	}
+	
+	100 methods
+	
+	}
+	
+	class Child extends Parent{
+	100Cr()
+	
+	@Override
+	marriage(){
+	deepika;
+	
+	}
+	
+	100 methods
+	
+	
+	}
+	
+	Encapsulation:-wrapping up of all the similar prop's into a single unit.
+	=============
+						*security
+	
+	accessmodifier:-
+	
+	
+	public  protected default private
+	
+	
+	costructor:-To initiaze the objects
+	===========
+	
+			syntax:-
+			
+				accessmodifier classname(){		//default constr
+				
+				//body
+				}
+				
+				parametrized const :-
+				
+				accessmodifier classname(params...){		//parametrized constr
+				
+				//body
+				}
+				
+				
+		final :- once the prop's are declared as final we cant:-
+				(1)inherit a class
+				(2)alter the var value
+				(3)override a method body
+		
+		 super:-Used to access the parent  class properties.
+		 this:-Used to access the current class properties.
+		 
+		 
+		userdefined exception:-
+		
+		 1.it must be the child class for the exception classes
+		 
+		 
+		 
+		 Arrays:-It's the homogenous collection of data  we can store in a container 
+		 ======
+		 
+		 1.Can stores Only homogenous data.
+		 
+		 2.Array are fixed in size (we can't change)
+		 
+		 
+		 3.No utility methods.
+		 
+		 
+		 
+		 creation of an array:-
+		 
+		 (1)	int arrname[] = {1,2,3,4,5,5,65,7,7,7};
+		 
+		 (2)     int arranme[] = new int[12];
+		 
+					arrname[6] = 12;
+					
+					
+			(3)	int arrname[] = new int[]{1,2,3,4,5,5,65,7,7,7};
+		 
+		 
+		 
+		 Collections Framework:-
+		 =====================
+		 
+		 1.Can stores  homogenous/heterogenous data.
+		 
+		 2.collections are not fixed in size (we can change)
+		 
+		 3.Utility methods.
+		 
+		 
+		 
+		 hashset :- It will follows it's own order
+		 
+		 lhs   :-It will follows the insertion order
+		 
+		 treeset :-It will follows alphabetical
+		 
+		 
+		 String :-
+		 =======
+		 
+		 
+		 String varname = value ;		------->String literal
+		 
+		 Integer value = new Integer(2343);
+		 
+		 String varname = new String("apple");
+		 
+		 
+		 String 			StringBuffer			StringBuilder
+		
+		(immutable)			mutable						mutable	
+		
+							sync						not sync
+							
+		File handling:- java.io
+		
+						
+						To create a file :- File 
+						
+						
+						
+						To write into a file :-	FileWriter
+												PrintWriter
+												BufferedWriter
+						
+						To read from a file   :- FileReader
+												BufferedReader
+												
+												
+						
+   0   --end of the file
+   -1
+   
+   
+   
+   Serialization:-
+   
+   
+		
+		
+		
+		
+				tcs hyderabad					tcs bnglr
+				
+				Employee 
+				
+				emp-details
+				
+				
+		Interface   --------->It's the complete collection of abstract methods
+
+		Marker Interface   -----> 0 methods
+		
+		Functional Interface -----> 1 method  (sam-single abstract method)
+		
+								DATABASE
+								========
+		
+		apple		345
+		
+		roses		546
+												
+		oranges		546
+		
+		tulips		457	
+
+
+	DATA:-		raw info 
+	
+DATABASE :- To store (permenantly & securely)the data for the future access in an organized way.
+					
+					
+	RDBMS :-Rows(Records) + columns	(fields)	
+
+Query's :-To do any operation we are going to write query.(SQL)	
+
+5 TYPES :-
+
+DDL(Data Definition Lang):-create,alter,drop,truncate,rename
+
+DML(Data Manipulation Lang):-insert,update,delete
+
+DRL(Data Retrival Lang):-select
+
+DCL (Data Control Lang):-grant,revoke
+
+TCL(Transaction Control Lang):-commit(ctrl+s),rollback(undo-ctrl+z)
+
+To create a user
+
+cmd>
+
+(1)conn /as sysdba
+
+(2)create user username identified by password;
+
+(3)grant connect, resource to username;
+
+(4)conn username/password;
+
+DDL :-create,alter,drop,truncate ,rename			--------->AUTOCOMMITED
+========================================
+
+create a table:-
+cmd>create table empployee(eid number(10),ename varcahr2(10));
+
+to remove a column:-
+cmd>alter table employee drop column eid;
+
+to add a column:-
+cmd>alter table employee add columnname datatype;
+
+to rename a column :-
+cmd>alter table employee rename column ename to Name;
+
+to change the datatype of a column:-
+cmd>alter table employee modify eid varchar2(10);
+
+to delete a table:-
+cmd>drop table tablename;
+
+to remove the table's (rows)data:-
+cmd>truncate table tablename;
+
+drop  :- deletes entire table with records(rows).
+
+truncate  :- only deletes the records but not table.
+
+DML :- insert,update,delete							----------->NOT AUTOCOMITTED
+===========================
+
+to insert the data into the table:-
+cmd>insert into employee values(12,'apple');
+
+to update the data :-
+cmd>update employee set esal=2398347 where eid=12;	
+
+
+			
+					
+								JDBC:-(Java Database Connectivity)
+								=====
+		(1)Loading Driver classes
+
+		(2)Creating Connetion
+		
+		(3)Create a Statement
+		
+		(4)Exceute the statement
+		
+		(5)Close the connections
+		
+		
+		
+								
+		c-create
+		r-retrive
+		u-update
+		d-delete 
+		
+			
+limitations:-			
+		(1)	It's having Queries
+
+		(2)	Table should be created manually
+		
+		(3)Duplicate code
+		
+		(4)db prop's are in the same file
+					
+	
+	
+	jpa(java persistence api):-specifications
+	------------------------
+	
+to overcome all the	limitations from jdbc:-	
+		
+		(1)	No Queries
+
+		(2)	No Table creation
+		
+		(3)No Duplicate code
+		
+		(4)db prop's should be in diff file
+		
+		(5)No exception handling
+		
+ORM(Object Relational Mapping) Tools :-hibernate,ecllipse link, toplink,ibatis......
+		
+		class --------> table
+		
+		fields/varaibles--->columns
+		
+		objects -------->rows
+		
+		EntityManagerFactory 
+		
+		EntityManager - sql equivalent queries
+		
+		insert  - persist();
+		
+		update -- merge();
+		
+		select -- find();
+		
+		delete -- remove();
+		
+		
+		maven:- it's build tool.
+		------
+		
+		
+									Spring:-
+									=======
+									
+									
+	def:- Spring is a non-invasive framework which is used to develop light-weighted and loosely
+    ---
+			coupled web applications.
+			
+			invasive :- It will forces the programmer to implement predefined API
+			
+			Non-Invasive :- It will not forces the programmer to implement predefined API
+			
+			tightly coupled :-If the dependencies are very high , then it is called as tightly coupled
+			
+			loosley coupled :-If there are no dependencies in the appn, then it is called as loosely coupled
+			
+			
+		
+		class D{
+		
+		
+		2000 methods
+		
+		
+		}
+			
+		class A extends D{
+		
+		1000 method + 2000  = 3000 methods
+		}
+		
+		class C extends A{
+		
+		1 method + 3000  ---->3001
+		
+		}
+		
+		spring 1.x ------->2003
+		
+		spring 6.x 
+		
+		
+		Rod Johnson
+		
+		
+		
+		
+		spring cloud, spring security ,spring data,spring jpa,spring boot , spring core ,spring rest..
+		
+		
+		ide sts
+		
+		
+		
+		
+		Spring core:-To avoid the dependencies b/n the classes(by removing object creation manually).
+		============
+		
+		
+		*Containers:- These are used to create objects in the class.
+		
+				(1)BeanFactory
+				
+				(2)ApplicationContext 
+				
+		*Dependecy Injection :- Injecting the data into the object is called D.I
+		
+				(1)Setters Injection  :-<property>
+				
+				(2)Constructor Injection :- <constructor-arg>
+				
+				(3)Autowiring  
+				
+				*autowire - Injection one class object into another class object
+		
+		*Configuration :-
+				(1)xml Configuration
+				
+				(2)Annotation Configuration
+		
+		
+		Spring Boot :-
+		-------------
+		Advantages:-
+					(1)Embedder server:-tomcat server(default port : 8080)
+									
+					(2)Auto Configuration 
+					
+					(3)Starters:-set of jar files 
+					
+					(4)Actuators :- to declare the health of our app through end point url's
+					
+					
+					
+		spring mvc :- 
+						controller :- interacts with the client using http url's
+						
+						jpa/dao			:- (business logic)hibernate methods
+						
+						service		:- services b/n controller to dao(data access object)
+						
+						entity		:- spring(java)  pojo code
+						
+					
