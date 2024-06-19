@@ -725,4 +725,19 @@ ORM(Object Relational Mapping) Tools :-hibernate,ecllipse link, toplink,ibatis..
 						
 						entity		:- spring(java)  pojo code
 						
+				
+	WebServices :- It is used to make interaction possible b/n two interoperable app's.
+	
+		(1)SOAP(Simple Object Access Program) :-It can use only xml format
+		
+		(2)REST(Representational state transfer) :-It can use xml,php ,json,txt,html....
+		
+	
+	
+			phonepe  ----------> electric webpage
+				
+				
+	Spring Rest :-
+
+			
 					
