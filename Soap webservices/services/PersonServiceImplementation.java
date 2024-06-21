@@ -2,6 +2,7 @@ package services;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import person.Person;
 
@@ -12,7 +13,7 @@ public class PersonServiceImplementation implements PersonService{
 	@Override
 	public String addPerson(Person person) {
 		
-		if(persons.get(person.getId())!= null) return "false";
+		if(persons.get(person.getId())!= null) return "	Please enter new id";
 		
 		persons.put(person.getId(), person);
 		
@@ -20,21 +21,35 @@ public class PersonServiceImplementation implements PersonService{
 	}
 
 	@Override
-	public String deletePerson(Person person) {
-		// TODO Auto-generated method stub
-		return null;
+	public String deletePerson(int id) {
+		if(persons.get(id)== null) return "	Please enter new id";
+		
+		persons.remove(id);
+		
+		return "your details are deleted successfully";
 	}
 
 	@Override
 	public Person getPerson(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return persons.get(id);
 	}
 
 	@Override
 	public Person[] getAllPersons() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Set<Integer> set = persons.keySet();
+		
+		Person[] p = new Person[set.size()];
+		
+		int i = 0;
+		
+		for(Integer id:set) {
+			p[i] = persons.get(id);
+			i++;
+		}
+		
+		return p;
 	}
 
 }
